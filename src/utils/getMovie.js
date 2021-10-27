@@ -1,10 +1,10 @@
 import Error404 from "../pages/Error404";
 
 const apiKey = '24619fe1fc7bfc7467ee7a3a0d10c9d5';
-const apiMovie = 'https://api.themoviedb.org/3/movie/{movie_id}';
+const apiMovie = 'https://api.themoviedb.org/3/movie/';
 
 const getMovie = async (id) => {
-    const apiURL = id ? `${apiMovie}${id}?api_key=${apiKey}&language= es` : Error404;
+    const apiURL = id ? `${apiMovie}${id}?api_key=${apiKey}&language=es` : Error404;
 
     try{
         const response = await fetch (apiURL);

@@ -1,8 +1,8 @@
 const apiKey = '24619fe1fc7bfc7467ee7a3a0d10c9d5';
-const apiTrending = 'https://api.themoviedb.org/3/trending/movie/week'; //aca modifique
+const apiTrending = 'https://api.themoviedb.org/3/trending/movie/week';
 
 const getTrending = async () => {
-    const apiURL = `${apiTrending}?api_key=${apiKey}&language= es`;
+    const apiURL = `${apiTrending}?api_key=${apiKey}`;
 
     try{
         const response = await fetch (apiURL);
