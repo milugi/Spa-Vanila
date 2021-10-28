@@ -8,7 +8,7 @@ const Home = async() => {
     <div class="movies">
     <article class="trending-movies">
         <section class="section-title">
-            <h2>Trending Top</h2>
+            <h2>Tendencias</h2>
         </section>
         <section class="section-movie">
             ${infoTrending.results.map(movie => `
@@ -26,7 +26,7 @@ const Home = async() => {
     </article>
     <article class="popularity-movies">
         <section class="section-title">
-            <h2>Most Popular</h2>
+            <h2>Mas Popular</h2>
         </section>
         <section class="section-movie">
             ${infoPopularity.results.map(movie => `
